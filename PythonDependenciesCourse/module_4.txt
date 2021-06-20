@@ -1,0 +1,68 @@
+Module 4: Finding Quality Python Packages
+----------------------------------------------------
+>> 4.2: How third-party packages can help you
+> Third-party
+	> more than 250,000 packages
+	> cover wide range of scenarios
+	> help save time
+		> not reinventing
+		> deliver project faster
+> Where to find
+	> requires some research
+
+>> 4.3: Standard libraries
+> 3.x
+	> https://docs.python.org/3/py-modindex.html
+> 2.7
+	> https://docs.python.org/2/py-modindex.html
+
+>> 4.4: Finding popular packages on curated lists
+> Curated lists
+	> awsome-python.com
+	> python.libhunt.com
+	> python-guide.org
+	> pymotw.com
+	> wiki.python.org
+
+>> 4.5 & 4.6: Selecting quality packages
+> Rules of Thumb
+	> workflow
+		> find a pool of candidates
+		> successively refine by exclusion
+	> step 1: find candidates
+		> browse curated lists
+		> google keywords
+		> stackoverflow keywords
+		> search community forums (r/python)
+		> search PyPI
+		> ask a question
+	> step 2: check package popularity
+		> check download stats
+		> google recommendations
+		> github stars
+		> libhunt popularity indicator
+	> step 3: check project homepage
+		> is it helpful?
+		> is it well-maintained?
+		> how successful is it?
+	> step 4: check README
+		> does it cover what it does?
+		> installation?
+		> licence?
+		> authors?
+	> step 5: is the project actively maintained?
+		> check changelog / update history
+		> activity on bug tracker?
+		> when was the last commit?
+	> step 6: spot-check the source code
+		>does it follow best practices?
+			> comments?
+			> docstrings?
+		> are there automated test?
+		> how experienced are the developers?
+		> comfort in making small changes
+	> step 7: try out a few candidates
+		> take narrowed list and try them out
+		> use fresh venvs
+		> does it install and import cleanly?
+		> do you enjoy working with it?

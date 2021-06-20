@@ -1,0 +1,5 @@
+pip==20.2
+wcwidth==0.2.5
+setuptools==49.2.0
+colorama==0.4.3
+prompt-toolkit==3.0.5

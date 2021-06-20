@@ -1,0 +1,15 @@
+#include used in a similar manor to import in python
+    <file> -> system directory
+    "file" -> local directory
+
+#define replaces text after the definition line
+
+#undef undoes #define for the lines after
+
+#if conditional statement
+    closed with #endif
+    #ifdef, #ifndef for defined macros
+
+#pragma instructions for the compliler
+
+#error displays message, causes preprocessor to stop

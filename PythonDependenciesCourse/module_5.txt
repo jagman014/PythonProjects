@@ -1,0 +1,60 @@
+Module 5: Setting up Reproducible Environments &
+	  Application Deploys
+----------------------------------------------------
+>> 5.1: Reproducible environments and appication
+	deploys
+> Goal
+	> all environments use the same set of 
+	  dependencies
+	> use of requirements files
+
+>> 5.2: Intro to requirements files
+> Requirements
+	> requirements.txt
+		> list of dependencies and versions
+		> can add comments with a #
+	> capture all third-party dependencies needed
+	> usually specify exact package
+
+>> 5.3: Capturing dependencies
+> Capturing
+	> (venv) c:\>pip freeze > requirements.txt
+		> captures all dependencies and
+		  secondary with exact version
+
+>> 5.4: Restoring captured dependencies
+> Restoring
+	> c:\>pip install -r requirements.txt
+		> installs all requirements in file
+
+>> 5.5: Separating development and production
+	dependencies
+> Development
+	> testing frameworks
+	> debuggers
+	> profilers
+		> requirements-dev.txt
+			> -r requirements.txt
+			> pulls from production file
+			> includes non-essentials
+> Production
+	> run on its own
+		> requirements.txt
+
+>> 5.6: Requirements best practices
+> Versioning
+	> use exact version most of the time
+	> include secondary dependencies
+	> some dev dependencies may go without
+> Naming
+	> requirements.txt / .pip / .lock
+	> requirements-dev.txt
+		> placed in root folder
+> Comments
+	> good use
+	> explain dev vs prod split
+> Ordering
+	> direct dependencies (alphabetically)
+	> secondary dependencies (alphabetically)
+> Dev / Prod split
+	> separate development dependencies off

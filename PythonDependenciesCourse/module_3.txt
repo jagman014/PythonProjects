@@ -1,0 +1,43 @@
+Module 3: Isolating Dependencies with Virtual Enviros
+-----------------------------------------------------
+>> 3.1: Isolating dependencies
+> Isolation
+	> pip installs in global
+	> need to avoid conflicts
+	> isolate by project
+		> isolate dependencies
+		> version control
+
+>> 3.2: Creating and activating a virtual environment
+> Creating
+	> c:\>cd [project directory]
+	> c:\>python -m venv venv
+		> completely isolated python
+		  environment
+> Activating
+	> c:\>venv\Scripts\activate
+		> (venv) c:\>
+
+>> 3.3: Installing packages in a virtual environment
+> Installing
+	> (venv) c:\>pip install [name]
+		> installs in local not global
+
+>> 3.4: Leaving and switching virtual environments
+> Deactivating
+	> (venv) c:\>deactivate
+		> c:\>
+> Switching
+	> leave then cd to new project, then activate
+	  new venv
+
+>> 3.5: Destroying virtual environments
+> Removing
+	> delete venv folder in explorer
+
+>> 3.6: Virtual environments workflow
+> Workflow
+	> c:\>cd [project folder]
+	> c:\>venv\Scripts\activate
+	> (venv) c:\> [work in project]
+	> (venv) c:\> deactivate

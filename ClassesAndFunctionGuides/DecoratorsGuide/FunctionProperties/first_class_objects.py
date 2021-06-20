@@ -1,0 +1,15 @@
+# functions can be passed as arguments
+def say_hello(name):
+    return f'Hello {name}'
+
+
+def be_awesome(name):
+    return f'Hey {name}, don\'t forget to be awesome'
+
+
+def greet_bob(greeter_func):
+    return greeter_func('Bob')
+
+
+print(greet_bob(say_hello))
+print(greet_bob(be_awesome))

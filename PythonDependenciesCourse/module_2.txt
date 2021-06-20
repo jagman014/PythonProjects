@@ -1,0 +1,88 @@
+Module 2: Managing Third-Party Dependencies with PIP
+----------------------------------------------------
+>> 2.1: Intro
+> Dependencies
+	> 3rd party libraries and frameworks
+	> Transitive
+		> dependencies of dependencies
+	> difficult to manage manually
+	> Solution
+		> Package managers
+
+>> 2.2: pip: Python package manager
+> Packages
+	> bundle of software to install python 
+	  environment
+> pip
+	> main interface in command line
+	> version check
+		> c:\>pip --version
+	> help
+		> c:\>pip --help
+
+>> 2.3: Installing and updating pip
+> Installing
+	> should be installed with 3.4+
+	> add to existing
+		> c:\>python get-pip.py
+> Updating
+	> c:\>pip install --upgrade pip setuptools
+
+>> 2.4: Package repositories
+> PyPI
+	> largest official repository of packages
+		> search for packages
+		> packages not QA tested
+			> best to research package
+		> each package has its own page
+			> shows secondary dependacies
+> Can search with c:\>pip search name
+	> not as much information
+
+>> 2.5: Python warehouse sneak peek
+> Warehouse
+	> replaced PyPI
+	> updated interface
+	> updated search results
+
+>> 2.6: Installing packages with pip
+> Installing
+	> c:\>pip install [name]
+		> installs from PyPI
+		> cached locally to speed up repeats
+		> installs latest
+	> c:\>pip install [name]==[version number]
+		> exact version number
+	> c:\>pip install [name]>=[number],<[number]
+		> version number within range
+	> c:\>pip install [name]~=[version number]
+		> compatible version
+	> c:\>pip install git+[repo link]@branch
+		> install from non-PyPI source
+		> @master for latest
+		> commit hash / tag / release
+> Commands
+	> c:\>pip list
+		> shows a list of dependencies in
+		  environment
+	> c:\>pip show [name]
+		> show metadata of package
+> Installing globally
+	> default install is global
+		> ok if intentional
+	> better to set-up virtual environments
+
+>> 2.7: Identifying and updating outdated packages
+> Outdated command
+	> c:\>pip list --outdated
+> Updating command
+	> c:\>pip install --upgrade [name]
+	> c:\>pip install -U [name]
+
+>> 2.8: Uninstalling packages
+> Uninstalling
+	> c:\>pip uninstall [name]
+		> won't uninstall secondary
+		  deoendencies
+> Better to use virtual environments
+	> delete and recreate environment

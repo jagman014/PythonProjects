@@ -1,0 +1,4 @@
+pysimplegui
+matplotlib
+numpy
+opencv-python
