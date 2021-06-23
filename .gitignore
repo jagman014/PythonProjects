@@ -128,5 +128,21 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# C/C++ compiled objects
+*.exe
+*.out
+*.app
+*.lai
+*.la
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.slo
+*.lo
+*.o
+*.obj
+
 # IDE Settings
 .vscode/
