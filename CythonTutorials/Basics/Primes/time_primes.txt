@@ -1,0 +1,11 @@
+Python: 
+    100 loops, best of 5: 2.19 msec per loop
+
+Python Compiled:
+    20 loops, best of 5: 16.3 msec per loop
+
+Cython:
+    100 loops, best of 5: 2.13 msec per loop
+
+Cython C++:
+    100 loops, best of 5: 2.35 msec per loop
