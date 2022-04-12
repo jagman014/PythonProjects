@@ -1,3 +1,8 @@
 django-admin startproject <projectname>  // create project files
 python manage.py runserver  // run django server
 python startapp <appname>  // create app files
+python manage.py migrate  // migrate apps
+python manage.py makemigrations <appname>  // create migration of app models
+python manage.py showmigrations  // migration status
+python manage.py sqlmigrate <appname> <migrate file>  // show sql execution for migration
+python manage.py shell  // django shell
