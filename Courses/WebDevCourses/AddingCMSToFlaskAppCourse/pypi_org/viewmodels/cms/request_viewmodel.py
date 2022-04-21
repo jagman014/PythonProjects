@@ -9,23 +9,16 @@ class RequestViewModel(ViewModelBase):
         super().__init__()
 
         self.url = url
+        self.page = cms_service.get_page(self.url)
+        self.html = None
 
-    @property
-    def page(self):
-        page = cms_service.get_page(self.url)
-        return page
-    
-    @property
-    def redirect(self):
-        redir = cms_service.get_redirect(self.url)
-        return redir
-    
-    @property
-    def redirect_url(self):
-        dest = None
-        redirect = self.redirect
+        if self.page:
+            self.html = self.page.get('contents')
 
-        if redirect:
+        self.redirect = cms_service.get_redirect(self.url)
+        self.redirect_url = None
+
+        if self.redirect:
             dest = self.redirect.get('url')
             query = flask.request.query_string
 
@@ -33,4 +26,4 @@ class RequestViewModel(ViewModelBase):
                 query = query.decode('utf-8')
                 dest = f"{dest}?{query}"
             
-        return dest
+            self.redirect_url = dest
