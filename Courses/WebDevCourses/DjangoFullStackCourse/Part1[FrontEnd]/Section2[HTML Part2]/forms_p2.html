@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form Labels</title>
+    </head>
+    <body>
+        <form action="https://www.youtube.com" method="get">
+            <p>Enter Text take to YT:</p>
+            <!--can set inputs to be required-->
+            <input type="text" name="user-input" required>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p></p>
+
+        <form>
+            <!--Bad method for labeling-->
+            <label>
+                Enter Text:
+                <input type="text" value="block-one">
+            </label>
+            <label>
+                Enter Text:
+                <input type="text" value="block-two">
+            </label>
+        </form>
+
+        <p></p>
+
+        <form>
+            <!--Better method for labeling using for-->
+            <label for="user-input">Enter Input:</label>
+            <!--placeholder instead of value-->
+            <input id="user-input" type="text" placeholder="Hello">
+        </form>
+    </body>
+</html>
