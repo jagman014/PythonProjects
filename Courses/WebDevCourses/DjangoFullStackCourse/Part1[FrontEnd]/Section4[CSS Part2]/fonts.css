@@ -1,0 +1,24 @@
+h1 {
+    font-family: "Arial";
+    text-align: center;
+}
+
+p {
+    font-family: "Barrio", cursive; /* google font */
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* 1em ~= 16px default */
+/* em is a ratio of the body font-size */
+body {
+    font-size: 20px;
+}
+
+#two {
+    font-size: 2.0em;
+    /* fontlibrary.org font */
+    font-family: 'AlexBrushRegular';
+    font-weight: normal;
+    font-style: normal; 
+}

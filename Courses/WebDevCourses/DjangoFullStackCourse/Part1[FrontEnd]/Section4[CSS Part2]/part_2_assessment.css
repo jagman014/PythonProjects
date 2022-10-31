@@ -1,0 +1,44 @@
+h1 {
+    font-family: 'Poor Story', cursive;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+/* 
+ * colour palette:
+ * #0E131F
+ * #38405F
+ * #59546C
+ * #8B939C
+ * #FF0035
+ */
+
+.art {
+    margin: auto;
+}
+
+td {
+    height: 250px;
+    padding: 110px;
+    border: 6px solid white;
+}
+
+#one {
+    background-color: #0E131F;
+}
+
+#two {
+    background-color: #38405F;
+}
+
+#three {
+    background-color: #59546C;
+}
+
+#four {
+    background-color: #8B939C;
+}
+
+#five {
+    background-color: #FF0035;
+}

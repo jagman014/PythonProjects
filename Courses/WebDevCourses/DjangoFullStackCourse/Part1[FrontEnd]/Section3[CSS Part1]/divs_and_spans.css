@@ -1,0 +1,21 @@
+body {
+    background: url(http://www.datacosmos.com/wp-content/uploads/2013/10/cosmos2.jpg);
+    background-repeat: repeat;
+}
+
+div {
+    background-color: turquoise;
+    /* need three attributes for borders */
+    border-color: red;
+    border-width: 5px;
+    border-style: double;
+}
+
+p {
+    color: purple;
+}
+
+span {
+    background-color: red;
+    color: black;
+}

@@ -1,0 +1,13 @@
+/* there is a heirachy in css */
+/* id > class > general */
+li {
+    color: red;
+}
+
+.top-items {
+    color: blue;
+}
+
+#two {
+    border: 3px solid black;
+}

@@ -1,0 +1,43 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    border: 1px solid black;
+}
+
+h2 {
+    color: purple;
+}
+
+input {
+    border: 2px solid darkred;
+}
+
+div p {
+    background-color: #fffca5;
+}
+
+#text-block {
+    border: 5px solid grey;
+    width: 800px;
+    height: 400px;
+}
+
+a[href="http://www.google.com"] {
+    color: red;
+}
+
+#item-one {
+    color: purple;
+    text-decoration: overline;
+}
+
+.exit {
+    background: blue;
+    border: 4px dashed yellow;
+}
+
+a:visited {
+    color: blue;
+}
