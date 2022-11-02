@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bootstrap Grids</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <style>
+            .boxy {
+                background-color: lightblue;
+                border: 2px solid black;
+            }
+        </style>
+
+        <div class="container">
+            <div class="row">
+                <div class="boxy col-lg-4">COL LARGE 4</div>
+                <div class="boxy col-lg-4">COL LARGE 4</div>
+                <div class="boxy col-lg-4">COL LARGE 4</div>
+            </div>
+
+            <div class="row">
+                <div class="boxy col-md-6">COL MEDIUM 6</div>
+                <div class="boxy col-md-6">COL MEDIUM 6</div>
+            </div>
+
+            <div class="row">
+                <div class="boxy col-6">COL XSMALL / AUTO 6</div>
+                <div class="boxy col-6">COL XSMALL / AUTO 6</div>
+            </div>
+
+            <div class="row">
+                <div class="boxy col-lg-3 col-sm-6">ONE</div>
+                <div class="boxy col-lg-3 col-sm-6">TWO</div>
+                <div class="boxy col-lg-3 col-sm-6">THREE</div>
+                <div class="boxy col-lg-3 col-sm-6">FOUR</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 boxy">
+                    <div class="row">
+                        <div class="col-lg-6 boxy">NEST ONE</div>
+                        <div class="col-lg-6 boxy">NEST TWO</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 boxy">TOP LEVEL</div>
+            </div>
+        </div>
+    </body>
+</html>
