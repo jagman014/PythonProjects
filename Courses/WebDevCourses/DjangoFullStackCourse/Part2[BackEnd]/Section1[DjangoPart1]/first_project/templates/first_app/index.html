@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>First App</title>
+        <link rel="stylesheet" href="{% static 'css/example_style.css' %}">
+    </head>
+    <body>
+        <h1>Hello, this is index.html</h1>
+
+        {{ insert_val }}
+
+        <h1>Static Image Injected</h1>
+        <img src="{% static 'images/404.png' %}" alt="Missing File">
+    </body>
+</html>
