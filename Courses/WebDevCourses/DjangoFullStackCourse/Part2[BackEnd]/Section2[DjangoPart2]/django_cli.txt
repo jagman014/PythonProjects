@@ -1,0 +1,24 @@
+# migrate models
+python manage.py migrate
+
+# register app changes
+python manage.py makemigrations <app name>
+
+# then rerun migrate
+
+# django python shell
+python manage.py shell
+
+# check database in shell
+from <app name>.models import <model>
+print(<model>.objects.all())
+
+var = <model>(<attribute>=<val>)
+var.save()
+
+print(<model>.objects.all())
+
+# create django superuser
+python manage.py createsuperuser
+
+# run server then go to /admin to access admin interface
