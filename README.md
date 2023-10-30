@@ -18,6 +18,7 @@ Projects Statuses:
     * [x] Faster Pandas (LinkedIn Learning)
 * [x] Traditional Face Detection With Python (RealPython)
 * [x] Functional Programming in Python (RealPython)
+* [ ] Machine Learning For Absolute Beginners (Packt)
 * [x] Object-oriented Python (Reuven Lerner)
 * [x] Managing Python Dependencies (RealPython)
 * [x] Python Version Features Courses
